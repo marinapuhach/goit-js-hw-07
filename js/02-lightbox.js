@@ -12,6 +12,10 @@ const gallery = galleryItems.map((image) =>
   
 galleryEl.insertAdjacentHTML("beforeend", gallery);
 
-let galler = new SimpleLightbox('.gallery a', {});
+let galler = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
 
